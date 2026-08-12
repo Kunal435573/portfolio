@@ -1,14 +1,7 @@
 'use client';
-import { projects } from "@/data/projects";
+import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import { useState } from "react";
-
-const projects = [
-  { id: 1, title: "Project 1", category: "coding", description: "A coding project" },
-  { id: 2, title: "Project 2", category: "video", description: "A video project" },
-  { id: 3, title: "Project 3", category: "design", description: "A design project" },
-
-];
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
