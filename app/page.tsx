@@ -1,3 +1,13 @@
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+
 export default function Home() {
-  return <h1>My Portfolio Home Page</h1>;
+  return (
+    <main>
+      <Hero />
+      <Projects />
+      <Contact />
+    </main>
+  );
 }
