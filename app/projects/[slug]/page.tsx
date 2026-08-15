@@ -458,44 +458,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-32 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-sm font-bold text-gray-600 mb-4 text-center">CONTACT ✦</h2>
-          <h3 className="text-6xl font-black mb-12 text-center">LET'S WORK <span className="text-blue-600">TOGETHER</span></h3>
+    {/* Contact Section */}
+<section id="contact" className="py-32 px-6 bg-gray-50">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-sm font-bold text-gray-600 mb-4 text-center">CONTACT ✦</h2>
+    <h3 className="text-6xl font-black mb-12 text-center">LET'S WORK <span className="text-blue-600">TOGETHER</span></h3>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center">
-              <div className="text-4xl mb-4">📧</div>
-              <h4 className="font-bold mb-2">Email</h4>
-              <a href="mailto:kp435573@gmail.com" className="text-blue-600 hover:underline">kp435573@gmail.com</a>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🔗</div>
-              <h4 className="font-bold mb-2">LinkedIn</h4>
-              <a href="https://linkedin.com" target="_blank" className="text-blue-600 hover:underline">Connect with me</a>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🐙</div>
-              <h4 className="font-bold mb-2">GitHub</h4>
-              <a href="https://github.com/kunal435573" target="_blank" className="text-blue-600 hover:underline">View projects</a>
-            </div>
-          </div>
+    <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <div className="text-center">
+        <div className="text-4xl mb-4">📧</div>
+        <h4 className="font-bold mb-2">Email</h4>
+        <a href="mailto:kp435573@gmail.com" className="text-blue-600 hover:underline">kp435573@gmail.com</a>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl mb-4">🔗</div>
+        <h4 className="font-bold mb-2">LinkedIn</h4>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Connect with me</a>
+      </div>
+      <div className="text-center">
+        <div className="text-4xl mb-4">🐙</div>
+        <h4 className="font-bold mb-2">GitHub</h4>
+        <a href="https://github.com/kunal435573" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">View projects</a>
+      </div>
+    </div>
 
-          <form className="bg-white p-8 rounded-2xl border border-gray-200 space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <input type="text" placeholder="Your Name" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-              <input type="email" placeholder="Your Email" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-            </div>
-            <input type="text" placeholder="Project Title" className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-            <textarea placeholder="Tell me about your project..." rows="6" className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600"></textarea>
-            <button type="submit" className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-gray-800 transition">
-              SEND MESSAGE
-            </button>
-          </form>
-        </div>
-      </section>
-
+    <div className="bg-white p-8 rounded-2xl border border-gray-200 space-y-6">
+      <div className="grid md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Your Name" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
+        <input type="email" placeholder="Your Email" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
+      </div>
+      <input type="text" placeholder="Project Title" className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
+      <textarea placeholder="Tell me about your project..." rows={6} className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600"></textarea>
+      <button type="submit" className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-gray-800 transition">
+        SEND MESSAGE
+      </button>
+    </div>
+  </div>
+</section>
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
