@@ -4,12 +4,13 @@ import { Play } from "lucide-react";
 export default function Hero() {
   return (
     <section className="w-full min-h-[85vh] flex flex-col justify-between px-6 md:px-16 py-8 max-w-7xl mx-auto">
+      {/* Main Hero Content - Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Column: Content */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <span className="w-2 h-2 rounded-full bg-orange-600"></span>
+            <span className="w-2 h-2 rounded-full bg-[#c26d47]"></span>
             <span className="text-xs font-semibold tracking-wider text-gray-600 uppercase">
               Creative Developer
             </span>
@@ -26,32 +27,29 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center gap-6 mb-12">
-            <a
-              href="https://www.linkedin.com/in/kunal-pandey-10032235b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#c26d47] text-white px-7 py-3.5 rounded-full text-xs font-semibold hover:bg-[#08519C] transition-colors flex items-center gap-2 shadow-sm"
-            >
+            <button className="bg-[#c26d47] text-white px-7 py-3.5 rounded-full text-xs font-semibold hover:bg-[#a85b39] transition-colors flex items-center gap-2 shadow-sm">
               Let's Work Together ↗
-            </a>
+            </button>
 
-            {/* Direct Redirect to Video Showreel Section */}
-            <a
-              href="#showreel"
-              className="flex items-center gap-3 text-xs font-semibold text-gray-800 hover:opacity-80 transition-opacity"
-            >
+            <button className="flex items-center gap-3 text-xs font-semibold text-gray-800 hover:opacity-80 transition-opacity">
               <span className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center bg-white shadow-sm">
                 <Play size={14} className="fill-black text-black ml-0.5" />
               </span>
               Watch Showreel
-            </a>
+            </button>
           </div>
         </div>
 
-        {/* Right Column: Avatar with Circle Background */}
+        {/* Right Column: Profile Picture with Circles */}
         <div className="relative flex justify-center items-center">
+          {/* Main Terracotta Circle Background */}
           <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-[#c26d47] absolute -z-10 translate-x-4 -translate-y-4"></div>
-          <div className="w-72 h-[400px] md:w-80 md:h-[460px] rounded-[40px] overflow-hidden shadow-2xl">
+          
+          {/* Outer Gray Ring */}
+          <div className="w-[300px] h-[300px] md:w-[410px] md:h-[410px] rounded-full border-[20px] border-gray-100 absolute -z-20"></div>
+
+          {/* Actual Profile Picture Container */}
+          <div className="w-72 h-[400px] md:w-80 md:h-[460px] rounded-[40px] overflow-hidden shadow-2xl relative z-10">
             <img
               src="/profile.jpg"
               alt="Profile"
