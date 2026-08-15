@@ -26,7 +26,7 @@ export default function About() {
         <div className="lg:col-span-5 relative flex justify-center">
           <div className="w-80 h-96 bg-gradient-to-br from-purple-200 to-indigo-100 rounded-3xl overflow-hidden relative shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+              src="/profile.jpg" 
               alt="Kunal" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
             />

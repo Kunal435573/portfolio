@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('ALL');
-  const [expandedFaq, setExpandedFaq] = useState(null);
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   const [email, setEmail] = useState('');
 
   const projects = [
@@ -13,15 +13,15 @@ export default function Home() {
       category: "DEVELOPMENT",
       description: "Full-stack AI with FastAPI & React",
       image: "💻",
-      details: "Built an intelligent code review system using Groq API, achieving 95% accuracy in code analysis."
+      link: "https://github.com/kunal435573/codemate-ai"
     },
     {
       id: 2,
-      title: "Brand Identity Design",
+      title: "Your Graphic Design Project",
       category: "GRAPHIC DESIGN",
-      description: "Complete branding package for tech startup",
+      description: "Your design description here",
       image: "🎨",
-      details: "Created comprehensive brand guidelines including logo, color palette, typography, and marketing materials."
+      link: "#"
     },
     {
       id: 3,
@@ -29,31 +29,31 @@ export default function Home() {
       category: "DEVELOPMENT",
       description: "Full-stack with payment integration",
       image: "🛒",
-      details: "Developed responsive e-commerce platform with Stripe integration, product filtering, and secure checkout."
+      link: "#"
     },
     {
       id: 4,
-      title: "Motion Graphics Teaser",
+      title: "Your Video Project",
       category: "GRAPHIC DESIGN",
-      description: "Cinematic video with VFX and color grading",
+      description: "Your video description here",
       image: "🎬",
-      details: "Created suspense thriller teaser with professional sound design and motion graphics."
+      link: "#"
     },
     {
       id: 5,
       title: "UI/UX Design System",
       category: "GRAPHIC DESIGN",
-      description: "Complete design system with components",
+      description: "Complete design system",
       image: "✨",
-      details: "Built scalable design system with 100+ components for enterprise application."
+      link: "#"
     },
     {
       id: 6,
-      title: "Web Application Dashboard",
+      title: "Your Development Project",
       category: "DEVELOPMENT",
-      description: "Real-time analytics dashboard",
+      description: "Project description here",
       image: "📊",
-      details: "Created real-time dashboard with live data visualization and WebSocket integration."
+      link: "#"
     }
   ];
 
@@ -63,92 +63,48 @@ export default function Home() {
     { name: "UI/UX Design", level: 88 },
     { name: "Video Editing", level: 85 },
     { name: "Node.js", level: 92 },
-    { name: "AI/LLM Integration", level: 87 },
-    { name: "Figma & Design Tools", level: 89 },
-    { name: "Database Design", level: 86 }
+    { name: "AI/LLM Integration", level: 87 }
   ];
 
   const testimonials = [
     {
       name: "Sarah Johnson",
       role: "Founder, TechStartup",
-      text: "Kunal delivered our website on time with exceptional quality. His attention to detail and problem-solving skills are outstanding!",
+      text: "Kunal delivered our website on time with exceptional quality!",
       rating: 5
     },
     {
       name: "Mike Chen",
-      role: "Product Manager, Digital Agency",
-      text: "The design system Kunal created saved us months of development time. Highly recommended!",
+      role: "Product Manager",
+      text: "The design system saved us months of development time.",
       rating: 5
     },
     {
       name: "Emma Davis",
       role: "CEO, Creative Studio",
-      text: "Exceptional video editing work. The motion graphics really elevated our brand presence.",
+      text: "Exceptional work on our video editing project.",
       rating: 5
     }
-  ];
-
-  const achievements = [
-    { icon: "🏆", title: "Best Developer Award", year: "2024" },
-    { icon: "🎓", title: "Google Cloud Certification", year: "2023" },
-    { icon: "⭐", title: "Top Freelancer on Fiverr", year: "2023-2024" },
-    { icon: "🚀", title: "AI Agents Certification", year: "2024" }
   ];
 
   const faqs = [
     {
       question: "What's your typical project timeline?",
-      answer: "Depends on complexity. Small projects: 1-2 weeks. Medium: 2-4 weeks. Large: 4-8 weeks. We discuss timeline during consultation."
+      answer: "Small projects: 1-2 weeks. Medium: 2-4 weeks. Large: 4-8 weeks."
     },
     {
       question: "Do you offer revisions?",
-      answer: "Yes! I include 2 rounds of revisions in all packages. Additional revisions available at hourly rate."
-    },
-    {
-      question: "What's your communication style?",
-      answer: "I provide daily updates via email/Slack. Weekly check-in calls to discuss progress and gather feedback."
+      answer: "Yes! 2 rounds of revisions included. Additional revisions at hourly rate."
     },
     {
       question: "Can you work on existing projects?",
-      answer: "Absolutely! I specialize in optimizing, redesigning, and adding features to existing applications."
-    },
-    {
-      question: "What about post-project support?",
-      answer: "30 days free support after launch. Extended support packages available at discounted rates."
-    }
-  ];
-
-  const caseStudies = [
-    {
-      number: "01",
-      title: "SaaS Dashboard Redesign",
-      description: "Increased user engagement by 45% through modern UI/UX overhaul",
-      results: ["45% engagement increase", "92% task completion rate", "4.8/5 user rating"]
-    },
-    {
-      number: "02",
-      title: "E-Commerce Performance",
-      description: "Optimized website for 3x faster load times and better conversion",
-      results: ["3x faster load", "156% conversion increase", "$2M additional revenue"]
-    },
-    {
-      number: "03",
-      title: "AI Integration Project",
-      description: "Built intelligent automation system saving 40 hours/week",
-      results: ["40 hrs/week saved", "94% accuracy rate", "30% cost reduction"]
+      answer: "Absolutely! I specialize in optimizing and adding features to existing apps."
     }
   ];
 
   const filteredProjects = activeFilter === 'ALL' 
     ? projects 
     : projects.filter(p => p.category === activeFilter);
-
-  const handleNewsletterSignup = (e) => {
-    e.preventDefault();
-    alert(`Thanks for signing up! Check ${email} for updates.`);
-    setEmail('');
-  };
 
   return (
     <div className="bg-white text-black min-h-screen">
@@ -192,14 +148,15 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="relative h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl flex items-center justify-center text-8xl">
-              🔮
-            </div>
-          </div>
+         <div className="relative h-96 rounded-3xl overflow-hidden">
+  <img 
+    src="/profile.jpg"
+    alt="Profile"
+    className="w-full h-full object-cover"
+  />
+</div>
         </div>
 
-        {/* Stats */}
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mt-32 pt-20 border-t border-gray-200">
           <div>
             <h3 className="text-5xl font-black mb-2">20+</h3>
@@ -298,7 +255,7 @@ export default function Home() {
                 <h4 className="text-lg font-bold text-blue-600 mb-2">{project.category}</h4>
                 <h3 className="text-3xl font-black mb-4 group-hover:text-blue-600 transition">{project.title}</h3>
                 <p className="text-gray-600 mb-6">{project.description}</p>
-                <a href="#" className="text-black font-bold hover:text-blue-600 transition">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-black font-bold hover:text-blue-600 transition">
                   VIEW PROJECT →
                 </a>
               </div>
@@ -320,7 +277,7 @@ export default function Home() {
                   <span className="font-bold text-lg">{skill.name}</span>
                   <span className="text-blue-600 font-black">{skill.level}%</span>
                 </div>
-                <div className="w-full bg-gray-300 rounded-full h-3">
+                <div className="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
                   <div 
                     className="bg-black h-3 rounded-full transition-all duration-500"
                     style={{ width: `${skill.level}%` }}
@@ -332,37 +289,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-sm font-bold text-gray-600 mb-4">CASE STUDIES ✦</h2>
-          <h3 className="text-6xl font-black mb-20">PROJECTS THAT <span className="text-blue-600">DELIVERED</span></h3>
-
-          <div className="space-y-12">
-            {caseStudies.map(study => (
-              <div key={study.number} className="border-t border-gray-200 pt-12 grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <p className="text-7xl font-black text-gray-100 mb-4">{study.number}</p>
-                  <h4 className="text-4xl font-black mb-4">{study.title}</h4>
-                  <p className="text-lg text-gray-600 mb-8">{study.description}</p>
-                  <div className="space-y-3">
-                    {study.results.map(result => (
-                      <div key={result} className="flex items-center gap-3">
-                        <span className="text-blue-600 font-bold">✓</span>
-                        <span className="font-semibold">{result}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl h-96"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <section id="testimonials" className="py-32 px-6 bg-gray-50">
+      <section id="testimonials" className="py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-sm font-bold text-gray-600 mb-4">TESTIMONIALS ✦</h2>
           <h3 className="text-6xl font-black mb-20">WHAT CLIENTS <span className="text-blue-600">SAY</span></h3>
@@ -380,24 +308,6 @@ export default function Home() {
                   <p className="font-black">{testimonial.name}</p>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements */}
-      <section className="py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-sm font-bold text-gray-600 mb-4">ACHIEVEMENTS ✦</h2>
-          <h3 className="text-6xl font-black mb-20">CERTIFICATIONS &amp; <span className="text-blue-600">AWARDS</span></h3>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {achievements.map((achievement, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl text-center hover:shadow-lg transition">
-                <div className="text-6xl mb-4">{achievement.icon}</div>
-                <h4 className="font-black mb-2">{achievement.title}</h4>
-                <p className="text-gray-600">{achievement.year}</p>
               </div>
             ))}
           </div>
@@ -431,76 +341,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
-      <section className="py-32 px-6">
+      {/* Contact Section */}
+      <section id="contact" className="py-32 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-12 text-white text-center">
-            <h2 className="text-5xl font-black mb-6">STAY UPDATED</h2>
-            <p className="text-xl mb-8 opacity-90">Get exclusive design tips, development insights, and project updates</p>
-            
-            <form onSubmit={handleNewsletterSignup} className="flex gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="flex-1 px-6 py-4 rounded-full text-black font-semibold focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-gray-800 transition"
-              >
-                SUBSCRIBE
-              </button>
+          <h2 className="text-sm font-bold text-gray-600 mb-4 text-center">CONTACT ✦</h2>
+          <h3 className="text-6xl font-black mb-12 text-center">LET'S WORK <span className="text-blue-600">TOGETHER</span></h3>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center">
+              <div className="text-4xl mb-4">📧</div>
+              <h4 className="font-bold mb-2">Email</h4>
+              <a href="mailto:kp435573@gmail.com" className="text-blue-600 hover:underline font-semibold">kp435573@gmail.com</a>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🔗</div>
+              <h4 className="font-bold mb-2">LinkedIn</h4>
+              <a href="https://linkedin.com/in/kunal-pandey" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">Connect with me</a>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🐙</div>
+              <h4 className="font-bold mb-2">GitHub</h4>
+              <a href="https://github.com/kunal435573" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">View projects</a>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+            <form className="space-y-6">
+              <input type="text" placeholder="Your name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" />
+              <input type="email" placeholder="Your email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" />
+              <textarea placeholder="Your message" rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" />
+              <button className="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">Send Message</button>
             </form>
           </div>
         </div>
       </section>
-
-    {/* Contact Section */}
-<section id="contact" className="py-32 px-6 bg-gray-50">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-sm font-bold text-gray-600 mb-4 text-center">CONTACT ✦</h2>
-    <h3 className="text-6xl font-black mb-12 text-center">LET'S WORK <span className="text-blue-600">TOGETHER</span></h3>
-
-    <div className="grid md:grid-cols-3 gap-8 mb-12">
-      <div className="text-center">
-        <div className="text-4xl mb-4">📧</div>
-        <h4 className="font-bold mb-2">Email</h4>
-        <a href="mailto:kp435573@gmail.com" className="text-blue-600 hover:underline">kp435573@gmail.com</a>
-      </div>
-      <div className="text-center">
-        <div className="text-4xl mb-4">🔗</div>
-        <h4 className="font-bold mb-2">LinkedIn</h4>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Connect with me</a>
-      </div>
-      <div className="text-center">
-        <div className="text-4xl mb-4">🐙</div>
-        <h4 className="font-bold mb-2">GitHub</h4>
-        <a href="https://github.com/kunal435573" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">View projects</a>
-      </div>
-    </div>
-
-    <div className="bg-white p-8 rounded-2xl border border-gray-200 space-y-6">
-      <div className="grid md:grid-cols-2 gap-6">
-        <input type="text" placeholder="Your Name" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-        <input type="email" placeholder="Your Email" className="border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-      </div>
-      <input type="text" placeholder="Project Title" className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600" />
-      <textarea placeholder="Tell me about your project..." rows={6} className="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:border-blue-600"></textarea>
-      <button type="submit" className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-gray-800 transition">
-        SEND MESSAGE
-      </button>
-    </div>
-  </div>
-</section>
-      {/* Footer */}
-      <footer className="bg-black text-white py-12 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <p>© 2026 Kunal Pandey. Built with Next.js & Vercel.</p>
-        </div>
-      </footer>
     </div>
   );
 }

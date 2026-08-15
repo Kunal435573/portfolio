@@ -65,22 +65,26 @@ export default function Skills() {
           <ArrowRight size={16} className="text-gray-400" />
         </div>
       </div>
-      {/* Local Video Showreel Section */}
-      <div className="mb-12 bg-black text-white p-6 rounded-3xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-purple-400 mb-3">
-          VIDEO EDITING SHOWREEL
-        </p>
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
-          <video 
-            controls 
-            className="w-full h-full object-cover"
-            poster="/projects/poster1.jpg"
-          >
-            <source src="/videos/showreel.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+     {/* Local Video Showreel Section */}
+<div id="showreel" className="mb-12 bg-black text-white p-6 rounded-3xl">
+  <p className="text-xs font-bold uppercase tracking-widest text-purple-400 mb-3">
+    VIDEO EDITING SHOWREEL
+  </p>
+  <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
+    <video
+      controls
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover"
+    >
+      <source src="/showreel1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
 
       {/* Tools & Tech Grid */}
       <div className="bg-white/60 p-8 rounded-3xl border border-gray-100 mb-12">
@@ -131,7 +135,7 @@ export default function Skills() {
   playsInline
   preload="metadata"
   
-  
+
 >
   <source src="/showreel.mp4" type="video/mp4" />
   Your browser does not support the video tag.

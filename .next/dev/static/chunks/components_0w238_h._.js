@@ -95,7 +95,7 @@ function About() {
                             className: "w-80 h-96 bg-gradient-to-br from-purple-200 to-indigo-100 rounded-3xl overflow-hidden relative shadow-lg",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+                                    src: "/profile.jpg",
                                     alt: "Kunal",
                                     className: "w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                                 }, void 0, false, {

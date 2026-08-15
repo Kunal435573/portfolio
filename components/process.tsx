@@ -80,15 +80,25 @@ export default function Process() {
       </div>
 
       {/* Dark Call to Action Banner */}
-      <div className="bg-black text-white p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <p className="text-[10px] tracking-widest uppercase text-purple-400 font-bold mb-2">• READY TO START YOUR PROJECT?</p>
-          <h3 className="text-3xl font-extrabold">Great projects start with a <span className="text-purple-400">conversation.</span></h3>
-        </div>
-        <button className="bg-white text-black px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 hover:bg-gray-200">
-          LET'S WORK TOGETHER <ArrowRight size={14} />
-        </button>
-      </div>
+     <div className="bg-black text-white p-8 md:p-12 rounded-3xl mt-16 flex flex-col md:flex-row items-center justify-between gap-6">
+  <div>
+    <span className="text-xs font-bold text-purple-400 tracking-wider uppercase">
+      READY TO START YOUR PROJECT?
+    </span>
+   <h3 className="text-2xl md:text-3xl font-extrabold mt-2">
+  Great projects start with a <span className="text-purple-400">conversation.</span>
+</h3>
+</div>
+
+<a
+  href="https://www.linkedin.com/in/kunal-pandey-10032235b"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-black font-bold text-xs uppercase px-6 py-4 rounded-full hover:bg-gray-200 transition-colors whitespace-nowrap"
+>
+  LET'S WORK TOGETHER →
+</a>
+</div>
     </section>
   );
-}
+} 
