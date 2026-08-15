@@ -10,7 +10,7 @@ export default function Contact() {
           <a href="mailto:kp435573@gmail.com" className="text-blue-400 hover:text-blue-300 text-lg">
             📧 kp435573@gmail.com
           </a>
-          <a href="https://linkedin.com" className="text-blue-400 hover:text-blue-300 text-lg">
+          <a href="https://www.linkedin.com/in/kunal-pandey-10032235b?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="text-blue-400 hover:text-blue-300 text-lg">
             🔗 LinkedIn
           </a>
           <a href="https://github.com/kunal435573" className="text-blue-400 hover:text-blue-300 text-lg">

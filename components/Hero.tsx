@@ -1,19 +1,12 @@
 import React from 'react';
-import { Play, ArrowUpRight } from 'lucide-react';
+import { Play, ArrowUpRight, } from 'lucide-react';
+
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen pt-12 pb-20 px-8 max-w-7xl mx-auto flex flex-col justify-between">
-      {/* Left Vertical Floating Sidebar */}
-      <div className="hidden lg:flex flex-col items-center gap-6 fixed left-6 top-1/3 z-50 text-xs tracking-widest text-gray-400">
-        <span className="rotate-90 uppercase whitespace-nowrap mb-8 text-[10px] tracking-widest text-gray-500">
-          • AVAILABLE FOR FREELANCE
-        </span>
-        <a href="#" className="hover:text-black transition-colors">GH</a>
-        <a href="#" className="hover:text-black transition-colors">IN</a>
-        <a href="#" className="hover:text-black transition-colors">IG</a>
-        <a href="#" className="hover:text-black transition-colors">MAIL</a>
-      </div>
+     
+  
 
       {/* Hero Content */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-8">
@@ -60,7 +53,7 @@ export default function Hero() {
 
       {/* Clients Logos */}
       <div className="mt-16 border-t border-gray-200 pt-8">
-        <p className="text-[10px] tracking-widest text-gray-400 font-semibold uppercase mb-4">
+        <p className="text-[30px] tracking-widest text-gray-400 font-semibold uppercase mb-4">
           TRUSTED BY CLIENTS WORLDWIDE
         </p>
         <div className="flex flex-wrap gap-8 items-center text-gray-400 font-bold text-sm">
