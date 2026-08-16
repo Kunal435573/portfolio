@@ -3,65 +3,99 @@ import { MoveUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] bg-[#FF6B35] overflow-hidden flex flex-col">
+    <section className="relative w-full min-h-screen bg-[#FF6B35] overflow-hidden flex flex-col justify-between">
 
-      {/* Giant Background Name - CENTERED */}
-      <div className="absolute top-0 left-0 w-full flex justify-center pt-8 pointer-events-none select-none z-0">
-        <span className="text-white font-black leading-none text-[12rem] md:text-[24rem] tracking-tight">
-          KUNAL
+      {/* Giant Background Name - always centered, never clips */}
+      <div className="absolute inset-0 flex items-start justify-center pt-4 pointer-events-none select-none z-0">
+        <span
+          className="text-white font-black leading-none tracking-tight whitespace-nowrap"
+          style={{ fontSize: "clamp(3.5rem, 22vw, 22rem)" }}
+        >
+            KUNAL
         </span>
       </div>
 
-      {/* Image - PERFECTLY CENTERED */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
+      {/* LET'S WORK Button - top right */}
+      <div className="relative z-30 flex justify-end px-4 md:px-14 pt-6">
+        <button
+          className="rounded-full bg-white text-black flex flex-col items-center justify-center font-black hover:bg-gray-100 transition-all shadow-xl gap-0.5"
+          style={{
+            width: "clamp(72px, 12vw, 150px)",
+            height: "clamp(72px, 12vw, 150px)",
+            fontSize: "clamp(8px, 1.3vw, 15px)",
+          }}
+        >
+          <MoveUpRight size={14} />
+          <span>LET'S</span>
+          <span>WORK</span>
+        </button>
+      </div>
+
+      {/* Center Image */}
+      <div className="relative z-10 flex justify-center items-end flex-1">
         <div className="relative">
           <img
-            src="/profile.png"
+            src="/images/profile.png"
             alt="Kunal Pandey"
-            className="h-[420px] md:h-[600px] object-contain object-bottom"
+            style={{ height: "clamp(300px, 55vh, 720px)" }}
+            className="object-contain object-bottom mx-auto"
           />
           {/* Bottom Fade */}
           <div
-            className="absolute bottom-0 left-0 w-full h-40 md:h-56 pointer-events-none"
+            className="absolute bottom-0 left-0 w-full pointer-events-none"
             style={{
+              height: "40%",
               background:
-                "linear-gradient(to top, #FF6B35 0%, #FF6B35 25%, transparent 100%)",
+                "linear-gradient(to top, #FF6B35 0%, #FF6B35 15%, transparent 100%)",
             }}
           />
         </div>
       </div>
 
-      {/* Floating Circle Button */}
-      <button className="absolute right-6 md:right-16 top-[40%] z-30 w-32 h-32 md:w-40 md:h-40 rounded-full bg-white text-black flex flex-col items-center justify-center text-sm md:text-base font-black hover:bg-gray-100 transition-all shadow-xl gap-1">
-        <MoveUpRight size={33} />
-        <span>LET'S</span>
-        <span>WORK</span>
-      </button>
+      {/* Bottom Row - Text Left + Stats Right */}
+      <div className="relative z-20 flex items-end justify-between px-4 md:px-14 pb-6 md:pb-12 gap-4">
 
-      {/* Bottom Left Text */}
-      <div className="absolute bottom-8 md:bottom-14 left-6 md:left-16 z-20 max-w-xs md:max-w-sm">
-        <h2 className="text-white text-3xl md:text-5xl font-black leading-tight mb-3">
-          Turning Ideas Into Visual Stories.
-        </h2>
-        <p className="text-white text-xs md:text-sm font-medium opacity-90 leading-relaxed">
-          I create bold digital experiences, illustrations, and designs that
-          help brands stand out and connect with their audience.
-        </p>
-      </div>
-
-      {/* Bottom Right Stats */}
-      <div className="absolute bottom-8 md:bottom-14 right-6 md:right-16 z-20 flex gap-8 text-white text-right">
-        <div>
-          <h4 className="text-3xl md:text-4xl font-black">50+</h4>
-          <p className="text-[10px] font-bold opacity-75 uppercase tracking-widest">
-            Projects Completed
+        {/* Left: Tagline */}
+        <div className="max-w-[55%] md:max-w-sm">
+          <h2
+            className="text-white font-black leading-tight mb-1 md:mb-2"
+            style={{ fontSize: "clamp(1rem, 3.5vw, 3rem)" }}
+          >
+            Turning Ideas Into Visual Stories.
+          </h2>
+          <p
+            className="text-white font-medium opacity-90 leading-relaxed hidden md:block"
+            style={{ fontSize: "clamp(0.65rem, 1vw, 0.9rem)" }}
+          >
+            I create bold digital experiences, illustrations, and designs that
+            help brands stand out and connect with their audience.
           </p>
         </div>
-        <div>
-          <h4 className="text-3xl md:text-4xl font-black">2+</h4>
-          <p className="text-[10px] font-bold opacity-75 uppercase tracking-widest">
-            Years of Experience
-          </p>
+
+        {/* Right: Stats */}
+        <div className="flex gap-4 md:gap-8 text-white text-right shrink-0">
+          <div>
+            <h4
+              className="font-black"
+              style={{ fontSize: "clamp(1.4rem, 4vw, 3rem)" }}
+            >
+              50+
+            </h4>
+            <p className="text-[8px] md:text-[10px] font-bold opacity-75 uppercase tracking-widest">
+              Projects
+            </p>
+          </div>
+          <div>
+            <h4
+              className="font-black"
+              style={{ fontSize: "clamp(1.4rem, 4vw, 3rem)" }}
+            >
+              2+
+            </h4>
+            <p className="text-[8px] md:text-[10px] font-bold opacity-75 uppercase tracking-widest">
+              Yrs Exp
+            </p>
+          </div>
         </div>
       </div>
 
