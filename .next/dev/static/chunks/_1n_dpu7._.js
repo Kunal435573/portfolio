@@ -17,7 +17,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function About() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-16 px-6 max-w-7xl mx-auto space-y-16",
+        id: "about",
+        className: "scroll-mt-20 py-16 px-6 max-w-7xl mx-auto space-y-16",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 lg:grid-cols-12 gap-8 items-center",
@@ -287,7 +288,7 @@ function About() {
     }, void 0, true, {
         fileName: "[project]/components/About.tsx",
         lineNumber: 8,
-        columnNumber: 5
+        columnNumber: 1
     }, this);
 }
 _c = About;
@@ -345,7 +346,7 @@ function Newsletter() {
                         className: "bg-gray-100 px-4 py-2 rounded-lg outline-none text-sm text-black border border-gray-200"
                     }, void 0, false, {
                         fileName: "[project]/components/Footer.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -354,13 +355,13 @@ function Newsletter() {
                         children: "Subscribe"
                     }, void 0, false, {
                         fileName: "[project]/components/Footer.tsx",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Footer.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -368,13 +369,13 @@ function Newsletter() {
                 children: result
             }, void 0, false, {
                 fileName: "[project]/components/Footer.tsx",
-                lineNumber: 47,
+                lineNumber: 48,
                 columnNumber: 18
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Footer.tsx",
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
@@ -382,7 +383,8 @@ _s(Newsletter, "qoGl22B7WAXz9bHytSnRSI+DHp8=");
 _c = Newsletter;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "w-full bg-white border-t border-gray-100 py-12",
+        id: "reviews",
+        className: "scroll-mt-20 w-full bg-black text-white ...",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-4",
             children: [
@@ -393,7 +395,7 @@ function Footer() {
                             children: "Stay inspired."
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 59,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -401,18 +403,18 @@ function Footer() {
                             children: "Get new insights, tutorials and behind-the-scenes straight to your inbox."
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 60,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Newsletter, {}, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 63,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 58,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -424,7 +426,7 @@ function Footer() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 67,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -438,7 +440,7 @@ function Footer() {
                             children: "GitHub"
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 73,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -449,25 +451,25 @@ function Footer() {
                             children: "LinkedIn"
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 81,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 72,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Footer.tsx",
-            lineNumber: 55,
+            lineNumber: 56,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Footer.tsx",
-        lineNumber: 54,
-        columnNumber: 5
+        lineNumber: 55,
+        columnNumber: 3
     }, this);
 }
 _c1 = Footer;
@@ -480,7 +482,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/components/Projects.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-var e = new Error("Could not parse module '[project]/components/Projects.tsx'\n\nExpected ',', got '{'");
+var e = new Error("Could not parse module '[project]/components/Projects.tsx'\n\nExpected ',', got 'ident'");
 e.code = 'MODULE_UNPARSABLE';
 throw e;
 }),
@@ -790,7 +792,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function Skills() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-16 px-6 max-w-7xl mx-auto",
+        id: "services",
+        className: "scroll-mt-20 ...",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12",
@@ -1450,7 +1453,7 @@ function Skills() {
     }, void 0, true, {
         fileName: "[project]/components/skills.tsx",
         lineNumber: 8,
-        columnNumber: 5
+        columnNumber: 3
     }, this);
 }
 _c = Skills;

@@ -5,6 +5,7 @@ import { useState } from "react";
 function Newsletter() {
   const [result, setResult] = useState("");
 
+  
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setResult("Sending...");
@@ -50,8 +51,8 @@ function Newsletter() {
 }
 
 export default function Footer() {
-  return (
-    <footer className="w-full bg-white border-t border-gray-100 py-12">
+ return (
+  <footer id="reviews" className="scroll-mt-20 w-full bg-black text-white ...">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-4">
         
         {/* Newsletter Section */}

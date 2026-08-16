@@ -1,10 +1,17 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata } from "next";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const jakarta = Plus_Jakarta_Sans({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "800", ],
+  weight: ["400", "500", "700", "800"],
+  variable: "--font-bricolage",
 });
+
+export const metadata: Metadata = {
+  title: "Kunal Pandey",
+  description: "Portfolio",
+};
 
 export default function RootLayout({
   children,
@@ -12,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={jakarta.className}>
-      <body className="bg-[#f7f5f0] text-black antialiased">{children}</body>
+    <html lang="en">
+      <body className={`${bricolage.variable} font-sans`}>{children}</body>
     </html>
   );
 }

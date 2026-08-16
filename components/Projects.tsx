@@ -14,7 +14,7 @@ const PROJECTS_DATA = [
     title: "Cinematic Travel Edit",
     category: "VIDEO EDITING",
     description: "A cinematic travel edit with storytelling, color grading, and smooth transitions.",
-    thumbnail: "/projects/poster1.jpg",
+    thumbnail: "images/Graphic7.jpeg",
     type: "video",
     mediaUrl: "/showreel1.mp4",
   },
@@ -23,7 +23,7 @@ const PROJECTS_DATA = [
     title: "Beyond Reality Teaser",
     category: "VIDEO EDITING",
     description: "A suspense thriller teaser edit with sound design and VFX compositing.",
-    thumbnail: "/projects/poster2.jpg",
+    thumbnail: "images/Graphic9.jpeg",
     type: "video",
     mediaUrl: "/showreel.mp4",
   },
@@ -54,18 +54,56 @@ const PROJECTS_DATA = [
     title: "Minimalist Brand Identity",
     category: "GRAPHIC DESIGN",
     description: "Complete visual identity design including typography, logo, and brand kit.",
-    thumbnail: "/projects/design1.jpg",
+    thumbnail: "/images/graphic.jpeg",
     type: "image",
-    mediaUrl: "/projects/design1.jpg",
+    mediaUrl: "/images/graphic.jpeg",
   },
-  {
+ 
+   {
     id: "06",
-    title: "3D Visual Banner Art",
+    title: "PRODUCT AD GRAPHIC",
     category: "GRAPHIC DESIGN",
     description: "Abstract 3D compositions and high-impact poster artwork designed for campaigns.",
-    thumbnail: "/projects/design2.jpg",
+    thumbnail: "/images/graphic2.jpeg",
     type: "image",
-    mediaUrl: "/projects/design2.jpg",
+    mediaUrl: "/images/graphic2.jpeg",
+  },
+  
+ {
+    id: "07",
+    title: "CASTLE GRAPHIC POSTER",
+    category: "GRAPHIC DESIGN",
+    description: "Abstract 3D compositions and high-impact poster artwork designed for campaigns.",
+    thumbnail: "/images/graphic3.jpeg",
+    type: "image",
+    mediaUrl: "/images/graphic3.jpeg",
+  },
+   {
+    id: "08",
+    title: "3D Burger AD",
+    category: "GRAPHIC DESIGN",
+    description: "Abstract 3D compositions and high-impact poster artwork designed for campaigns.",
+    thumbnail: "/images/graphic4.jpeg",
+    type: "image",
+    mediaUrl: "/images/graphic4.jpeg",
+  },
+ {
+    id: "09",
+    title: "DARK GRAPHIC OF VISUAL BOAT",
+    category: "GRAPHIC DESIGN",
+    description: "Abstract 3D compositions and high-impact poster artwork designed for campaigns.",
+    thumbnail: "/images/graphic5.jpeg",
+    type: "image",
+    mediaUrl: "/images/graphic5.jpeg",
+  },
+   {
+    id: "10",
+    title: "3D Visual OF SHUSHI MENU",
+    category: "GRAPHIC DESIGN",
+    description: "Abstract 3D compositions and high-impact poster artwork designed for campaigns.",
+    thumbnail: "/images/graphic6.jpeg",
+    type: "image",
+    mediaUrl: "/images/graphic6.jpeg",
   },
 ];
 
@@ -81,7 +119,7 @@ export default function Projects() {
       : PROJECTS_DATA.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="projects" className="py-16 px-6 md:px-16 max-w-7xl mx-auto">
+    <section id="portfolio" className="scroll-mt-20 ...">
       {/* Title & Category Filter Tabs */}
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6">
         <h2 className="text-4xl font-black text-black tracking-tight">

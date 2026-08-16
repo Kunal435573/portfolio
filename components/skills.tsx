@@ -5,8 +5,8 @@ import { Code, Video, Palette, ArrowRight, Calendar } from 'lucide-react';
 
 export default function Skills() {
   return (
-    <section className="py-16 px-6 max-w-7xl mx-auto">
-      {/* Header */}
+  <section id="services" className="scroll-mt-20 ...">
+    {/* Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
         <div className="lg:col-span-7 space-y-4">
           <p className="text-xs font-semibold text-purple-600 tracking-widest uppercase">

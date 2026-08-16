@@ -5,8 +5,8 @@ import { Download, Sparkles, Code, Video, Award } from 'lucide-react';
 
 export default function About() {
   return (
-    <section className="py-16 px-6 max-w-7xl mx-auto space-y-16">
-      {/* Hero Header */}
+<section id="about" className="scroll-mt-20 py-16 px-6 max-w-7xl mx-auto space-y-16">
+    {/* Hero Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-7 space-y-6">
           <p className="text-xs font-semibold text-purple-600 tracking-widest uppercase">04 / ABOUT ME</p>
@@ -71,3 +71,4 @@ export default function About() {
     </section>
   );
 }
+

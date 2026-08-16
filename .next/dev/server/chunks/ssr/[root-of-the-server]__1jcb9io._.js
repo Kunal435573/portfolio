@@ -56,6 +56,18 @@ function RootLayout({ children }) {
         columnNumber: 5
     }, this);
 }
+module.exports = {
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: [
+                    "var(--font-bricolage)",
+                    "sans-serif"
+                ]
+            }
+        }
+    }
+};
 }),
 "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", (function(__turbopack_context__){
 
