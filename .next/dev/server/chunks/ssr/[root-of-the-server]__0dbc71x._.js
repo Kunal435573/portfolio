@@ -176,7 +176,7 @@ function Hero() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 left-0 w-full flex justify-center pt-8 pointer-events-none select-none z-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-white font-black leading-none text-[18rem] md:text-[36rem] tracking-tight",
+                    className: "text-white font-black leading-none text-[12rem] md:text-[24rem] tracking-tight",
                     children: "KUNAL"
                 }, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
@@ -196,7 +196,7 @@ function Hero() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/profile.png",
                             alt: "Kunal Pandey",
-                            className: "h-[600px] md:h-[900px] object-contain object-bottom"
+                            className: "h-[420px] md:h-[600px] object-contain object-bottom"
                         }, void 0, false, {
                             fileName: "[project]/components/Hero.tsx",
                             lineNumber: 18,

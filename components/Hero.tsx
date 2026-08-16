@@ -7,7 +7,7 @@ export default function Hero() {
 
       {/* Giant Background Name - CENTERED */}
       <div className="absolute top-0 left-0 w-full flex justify-center pt-8 pointer-events-none select-none z-0">
-        <span className="text-white font-black leading-none text-[18rem] md:text-[36rem] tracking-tight">
+        <span className="text-white font-black leading-none text-[12rem] md:text-[24rem] tracking-tight">
           KUNAL
         </span>
       </div>
@@ -18,7 +18,7 @@ export default function Hero() {
           <img
             src="/profile.png"
             alt="Kunal Pandey"
-            className="h-[600px] md:h-[900px] object-contain object-bottom"
+            className="h-[420px] md:h-[600px] object-contain object-bottom"
           />
           {/* Bottom Fade */}
           <div

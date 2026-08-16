@@ -683,6 +683,14 @@ img, video {
   height: 600px;
 }
 
+.h-\[600x\] {
+  height: 600x;
+}
+
+.h-\[420px\] {
+  height: 420px;
+}
+
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
@@ -1414,6 +1422,10 @@ img, video {
   font-size: 18rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1874,6 +1886,14 @@ body {
 
   .md\:h-\[900px\] {
     height: 900px;
+  }
+
+  .md\:h-\[px\] {
+    height: px;
+  }
+
+  .md\:h-\[600px\] {
+    height: 600px;
   }
 
   .md\:w-1\/2 {
