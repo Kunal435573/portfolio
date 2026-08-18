@@ -9,12 +9,12 @@ export default function Skills() {
     {/* Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
         <div className="lg:col-span-7 space-y-4">
-          <p className="text-xs font-semibold text-purple-600 tracking-widest uppercase">
+          <p className="text-xs font-semibold text-orange-600 tracking-widest uppercase">
             03 / MY SKILLS
           </p>
           <h2 className="text-6xl sm:text-7xl font-extrabold tracking-tight text-black leading-none">
             What I<br />
-            <span className="text-indigo-600">do best.</span>
+            <span className="text-orange-600">do best.</span>
           </h2>
         </div>
         <div className="lg:col-span-5">

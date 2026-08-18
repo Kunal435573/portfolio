@@ -11,7 +11,7 @@ const PROJECTS_DATA = [
   // --- VIDEO EDITING ---
   {
     id: "01",
-    title: "Cinematic Travel Edit",
+    title: "Cinematic kanya west Edit",
     category: "VIDEO EDITING",
     description: "A cinematic travel edit with storytelling, color grading, and smooth transitions.",
     thumbnail: "images/Graphic7.jpeg",

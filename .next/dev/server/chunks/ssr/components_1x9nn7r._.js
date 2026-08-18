@@ -1261,7 +1261,7 @@ function Skills() {
                         className: "lg:col-span-7 space-y-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs font-semibold text-purple-600 tracking-widest uppercase",
+                                className: "text-xs font-semibold text-orange-600 tracking-widest uppercase",
                                 children: "03 / MY SKILLS"
                             }, void 0, false, {
                                 fileName: "[project]/components/skills.tsx",
@@ -1278,7 +1278,7 @@ function Skills() {
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-indigo-600",
+                                        className: "text-orange-600",
                                         children: "do best."
                                     }, void 0, false, {
                                         fileName: "[project]/components/skills.tsx",
